@@ -79,18 +79,18 @@
   width: 420px;
 }
 
-.head_nav .search .search_input input[type=text] {
+.head_nav .search .search_input input[type='text'] {
   width: 366px;
   height: 36px;
   border: 1px solid #c91706;
   padding-left: 5px;
 }
 
-.head_nav .search .search_input input[type=text]::placeholder {
+.head_nav .search .search_input input[type='text']::placeholder {
   font-size: 14px;
 }
 
-.head_nav .search .search_input input[type=button] {
+.head_nav .search .search_input input[type='button'] {
   width: 50px;
   height: 38px;
   position: absolute;

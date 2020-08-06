@@ -23,27 +23,26 @@
             }
             dd {
                 float: left;
-                >a {
+                > a {
                     color: #666;
                 }
-                >span {
+                > span {
                     margin: 0 5px;
                 }
             }
             dt {
                 float: left;
                 margin-right: 500px;
-                >a:nth-child(2) {
+                > a:nth-child(2) {
                     color: #666;
                 }
-                >a:last-child {
+                > a:last-child {
                     color: #e92312;
                 }
             }
         }
     }
 }
-
 
 /* logo和搜索框样式 */
 
@@ -68,7 +67,7 @@
         .search_input {
             position: relative;
             width: 420px;
-            input[type=text] {
+            input[type='text'] {
                 width: 366px;
                 height: 36px;
                 border: 1px solid #c91706;
@@ -77,7 +76,7 @@
                     font-size: 14px;
                 }
             }
-            input[type=button] {
+            input[type='button'] {
                 width: 50px;
                 height: 38px;
                 position: absolute;
@@ -113,7 +112,7 @@
         position: absolute;
         right: 95px;
         top: 20px;
-        >a {
+        > a {
             line-height: 38px;
             text-align: center;
             display: block;
