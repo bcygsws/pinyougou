@@ -1,0 +1,129 @@
+/* 通栏宽度 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head_bar {
+    background-color: #eee;
+    .head_son {
+        height: 32px;
+        line-height: 32px;
+        color: #666;
+        dl {
+            font-size: 12px;
+            dd a,
+            dt.register a {
+                color: #666;
+                &:hover {
+                    color: #c91706;
+                    text-decoration: none;
+                }
+            }
+            dd {
+                float: left;
+                >a {
+                    color: #666;
+                }
+                >span {
+                    margin: 0 5px;
+                }
+            }
+            dt {
+                float: left;
+                margin-right: 500px;
+                >a:nth-child(2) {
+                    color: #666;
+                }
+                >a:last-child {
+                    color: #e92312;
+                }
+            }
+        }
+    }
+}
+
+
+/* logo和搜索框样式 */
+
+.head_nav {
+    // background-color: hotpink;
+    position: relative;
+    .logo {
+        h1 {
+            a {
+                display: block;
+                height: 105px;
+                background: url('../images/logo.png') no-repeat left center;
+                text-indent: -999px;
+            }
+        }
+    }
+    .search {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .search_input {
+            position: relative;
+            width: 420px;
+            input[type=text] {
+                width: 366px;
+                height: 36px;
+                border: 1px solid #c91706;
+                padding-left: 5px;
+                &::placeholder {
+                    font-size: 14px;
+                }
+            }
+            input[type=button] {
+                width: 50px;
+                height: 38px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-color: #c91706;
+                color: #ffffff;
+                border: 0;
+            }
+        }
+        ul {
+            margin-top: 10px;
+            li {
+                float: left;
+                margin: 0 5px;
+                font-size: 12px;
+                a {
+                    color: #333;
+                    &.first {
+                        color: #e92312;
+                    }
+                    &:hover {
+                        color: #c91706;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .car {
+        width: 130px;
+        height: 38px;
+        position: absolute;
+        right: 95px;
+        top: 20px;
+        >a {
+            line-height: 38px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            border: 1px solid #000;
+            font-size: 14px;
+            color: #666;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
