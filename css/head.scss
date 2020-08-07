@@ -1,5 +1,5 @@
 /* 通栏宽度 */
-/* 定义颜色 */
+/* 定义常用颜色,scss中使用$符号，而less中使用@符号定义变量 */
 $skin: #c91706;
 $skin_hover:#e92312;
 
@@ -137,6 +137,7 @@ $skin_hover:#e92312;
         position: absolute;
         right: 95px;
         top: 20px;
+
         >a {
             line-height: 38px;
             text-align: center;
@@ -165,6 +166,352 @@ $skin_hover:#e92312;
             top: -3px;
             right: 15px;
 
+        }
+    }
+}
+
+/* 导航栏样式 */
+.shopping_nav {
+    border-bottom: 2px solid $skin;
+
+    .goods_nav {
+        height: 45px;
+        position: relative;
+
+        >.shopping_cate {
+            width: 210px;
+            height: 512px;
+            background-color: $skin;
+
+            dt {
+                text-align: center;
+                font-size: 14px;
+                color: #ffffff;
+                line-height: 45px;
+                margin-bottom: 2px;
+            }
+
+            dd {
+                height: 31px;
+                line-height: 31px;
+                padding-left: 10px;
+                position: relative;
+
+                &:hover {
+                    background-color: #ffffff;
+                }
+
+                a.cate_link {
+                    font-size: 12px;
+                    color: #ffffff;
+
+                    &::after {
+                        margin-right: 20px;
+                        font-size: 14px;
+                        text-decoration: none;
+                        color: #ffffff;
+                        position: absolute;
+                        right: -10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $skin;
+                    }
+                }
+            }
+        }
+
+        >.shopping_link {
+            position: absolute;
+            left: 210px;
+            top: 0;
+
+            ul {
+                li {
+                    height: 100%;
+                    line-height: 45px;
+                    float: left;
+                    margin: 0 28px;
+                    text-align: center;
+
+                    >a {
+                        font-size: 14px;
+                        color: #666;
+
+                        &:hover {
+                            color: $skin;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.shopping_show {
+            /* 注意calc()方法中的运算法左右要保留一个空格，否则width设置无效
+            width 100%，为w,去掉左边210px,和左边margin 10px
+            */
+            width: calc(100% - 210px - 10px);
+            height: 455px;
+            margin: 10px 0 0 10px;
+            position: absolute;
+            left: 210px;
+            top: 47px;
+            /*  background-color: blue; */
+            display: flex;
+            flex-direction: row;
+
+            .side {
+                width: 250px;
+                margin-left: 10px;
+
+                .side_content {
+                    height: 379px;
+                    border: 1px solid #ddd;
+
+                    .side_title {
+                        height: 34px;
+                        line-height: 34px;
+                        border-bottom: 1px dashed #eee;
+                        padding: 0 10px;
+                        font-size: 12px;
+
+                        >span,
+                        >a {
+                            color: #666;
+                        }
+
+                        >span {
+                            font-size: 14px;
+                        }
+
+                        >a.icon-arrowRig {
+                            margin-left: 115px;
+                            color: #666;
+
+                            &::after {
+                                margin-left: 3px;
+                            }
+
+                            &:hover {
+                                text-decoration: none;
+                                color: $skin;
+                            }
+                        }
+                    }
+
+                    .side_link {
+                        height: 130px;
+                        border-bottom: 1px solid #ddd;
+
+                        li {
+                            height: 20px;
+                            line-height: 20px;
+                            margin: 5px 5px;
+
+                            a {
+                                color: #666666;
+                                font-size: 12px;
+
+                                &:hover {
+                                    text-decoration: none;
+                                    color: $skin;
+                                }
+                            }
+                        }
+                    }
+
+                    .side_icon {
+                        /*   box-sizing: border-box; */
+
+                        li {
+                            width: 25%;
+                            float: left;
+
+                            &:nth-child(4n)>a {
+                                border-right: 0;
+                            }
+
+                            &:nth-child(9) a,
+                            &:nth-child(10) a,
+                            &:nth-child(11) a,
+                            &:nth-child(12) a {
+                                border-bottom: 0;
+                            }
+
+                            >a {
+                                width: 100%;
+                                display: block;
+                                border-right: 1px solid #cccccc;
+                                border-bottom: 1px solid #cccccc;
+                                color: #666666;
+
+                                /*  box-sizing: border-box;
+ */
+                                &:hover {
+                                    text-decoration: none;
+                                    color: $skin;
+                                }
+
+                                >em {
+                                    display: block;
+                                    width: 100%;
+                                    height: 48px;
+                                    background: url('../images/icons.png') no-repeat 0 -6px;
+                                }
+
+                                >p {
+                                    text-align: center;
+                                    font-size: 12px;
+                                    padding-bottom: 5px;
+                                }
+
+
+                            }
+
+                            &:nth-child(2)>a em {
+                                background-position: -62px -6px;
+                            }
+
+                            &:nth-child(3)>a em {
+                                background-position: -124px -6px;
+                            }
+
+                            &:nth-child(4)>a em {
+                                background-position: -186px -6px;
+                            }
+
+                            &:nth-child(5)>a em {
+                                background-position: 0 -78px;
+                            }
+
+                            &:nth-child(6)>a em {
+                                background-position: -62px -78px;
+                            }
+
+                            &:nth-child(7)>a em {
+                                background-position: -124px -78px;
+                            }
+
+                            &:nth-child(8)>a em {
+                                background-position: -186px -78px;
+                            }
+
+                            &:nth-child(9)>a em {
+                                background-position: 0 -150px;
+                            }
+
+                            &:nth-child(10)>a em {
+                                background-position: -62px -150px;
+                            }
+
+                            &:nth-child(11)>a em {
+                                background-position: -124px -150px;
+                            }
+
+                            &:nth-child(12)>a em {
+                                background-position: -186px -150px;
+                            }
+
+                            &:nth-child(4n)>a {
+                                border-right: 0;
+                            }
+
+                            &:nth-child(9) a,
+                            &:nth-child(10) a,
+                            &:nth-child(11) a,
+                            &:nth-child(12) a {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+
+                .show_img {
+                    margin-top: 5px;
+                }
+
+
+            }
+
+            .show {
+                flex: 1;
+                background-color: orange;
+
+                .playshow {
+                    width: 721px;
+                    overflow: hidden;
+                    position: relative;
+
+                    ul.play_img {
+                        width: 5768px;
+
+                        li {
+                            float: left;
+
+                            a {
+                                display: block;
+
+                                img {
+                                    vertical-align: bottom;
+                                }
+                            }
+                        }
+                    }
+
+                    ul.play_ind {
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        li {
+                            float: left;
+                            margin: 0 5px;
+
+                            a {
+                                display: block;
+                                width: 10px;
+                                height: 10px;
+                                background: rgba($color: #fff, $alpha: .7);
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+
+                    .play_btn {
+
+                        .play_left,
+                        .play_right {
+                            display: block;
+                            width: 30px;
+                            height: 50px;
+                            background: rgba(#fff, .5);
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            text-align: center;
+                            line-height: 50px;
+                            /* 设置点击为小手 */
+                            cursor: pointer;
+
+                        }
+
+                        .play_left {
+                            left: 0;
+                        }
+
+                        .play_right {
+                            right: 0;
+                        }
+                    }
+                }
+
+            }
         }
     }
 }
