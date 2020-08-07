@@ -163,7 +163,7 @@
 }
 
 /* 导航栏样式 */
-.shopping_nav {
+.shopping_nav .red_str {
   height: 45px;
   border-bottom: 2px solid #c91706;
 }
@@ -547,3 +547,5 @@
 .shopping_nav .goods_nav > .shopping_tell dl dd:last-child a img {
   border: 0;
 }
+
+/* 家用电器和手机通讯商品展示模块样式 */

@@ -172,8 +172,10 @@ $skin_hover:#e92312;
 
 /* 导航栏样式 */
 .shopping_nav {
-    height: 45px;
-    border-bottom: 2px solid $skin;
+    .red_str {
+        height: 45px;
+        border-bottom: 2px solid $skin;
+    }
 
     .goods_nav {
         height: 684px;
@@ -521,6 +523,7 @@ $skin_hover:#e92312;
 
             dl {
                 background-color: #EBEBEB;
+
                 dt,
                 dd {
                     float: left;
@@ -553,17 +556,26 @@ $skin_hover:#e92312;
                         display: block;
                         height: 162px;
                         line-height: 162px;
-                        img{
+
+                        img {
                             vertical-align: middle;
                             border-right: 1px solid #aaa;
                         }
                     }
-                    &:last-child  a img{
+
+                    &:last-child a img {
                         border: 0;
                     }
                 }
 
             }
         }
+    }
+}
+
+/* 家用电器和手机通讯商品展示模块样式 */
+.goods_display {
+    .electronic {
+        .ele_nav {}
     }
 }
