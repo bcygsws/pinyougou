@@ -575,7 +575,278 @@ $skin_hover:#e92312;
 
 /* 家用电器和手机通讯商品展示模块样式 */
 .goods_display {
+    margin-top: 20px;
+
     .electronic {
-        .ele_nav {}
+        .ele_nav {
+            height: 35px;
+            line-height: 35px;
+
+            dl {
+                padding-right: 10px;
+                border-bottom: 2px solid $skin;
+
+                dt,
+                dd {
+                    float: left;
+                }
+
+                dt {
+                    color: $skin;
+                }
+
+                dd {
+                    float: right;
+                    font-size: 12px;
+
+                    >a {
+                        color: #666666;
+
+                        &:hover {
+                            color: $skin;
+                            text-decoration: none;
+                        }
+                    }
+
+                    >span {
+                        margin: 0 10px;
+                    }
+
+                    &:last-child a {
+                        color: $skin_hover;
+                    }
+                }
+            }
+        }
+
+        .ele_show {
+            height: 360px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 2px;
+
+            >.ele_left {
+                width: 208px;
+
+                /*  background-color: red; */
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    padding: 0 6px;
+
+                    li {
+                        text-align: center;
+                        width: 95px;
+                        height: 30px;
+                        line-height: 30px;
+                        border-bottom: 1px solid #bbb;
+
+                        a {
+                            color: #666666;
+                            font-size: 12px;
+
+                            &:hover {
+                                text-decoration: none;
+                                color: $skin;
+                            }
+                        }
+                    }
+                }
+
+                .left_show {
+                    margin-top: 10px;
+
+                    a {
+                        display: block;
+                        text-align: center;
+                        transition: all .8s ease;
+
+                        img {
+                            vertical-align: bottom;
+                        }
+
+                        &:hover {
+                            transform: translateX(8px);
+                        }
+                    }
+                }
+            }
+
+            >.ele_mid {
+                width: 332px;
+
+                /* background-color: orange; */
+                .ele_lunbo {
+                    width: 332px;
+                    overflow: hidden;
+
+                    ul {
+                        width: 996px;
+
+                        li {
+                            float: left;
+
+                            a {
+                                display: block;
+                                transition: all .8s ease;
+
+                                &:hover {
+                                    transform: translateX(8px);
+                                }
+
+                                img {
+                                    vertical-align: bottom;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            >.ele_right {
+                width: 660px;
+                /* background-color: hotpink; */
+                display: flex;
+
+                .ele_fat {
+                    flex: 1;
+
+                    ul.ele_side {
+                        width: 220px;
+                        /* overflow: hidden; */
+
+                        li {
+                            float: left;
+                            /*  width: 50%; */
+                            border-right: 1px solid #ddd;
+                            border-bottom: 1px solid #ddd;
+                            position: relative;
+                            z-index: 2;
+                            overflow: hidden;
+
+                            a {
+                                display: block;
+                                transition: all .8s ease;
+                                position: relative;
+                                z-index: 1;
+
+                                &:hover {
+                                    transform: translateX(8px);
+
+                                }
+
+                                img {
+                                    vertical-align: bottom;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .ele_ctr {
+                    flex: 1;
+
+                    /* overflow: hidden; */
+                    ul.ele_center {
+                        width: 220px;
+
+                        li {
+                            float: left;
+                            border-right: 1px solid #ddd;
+                            border-bottom: 1px solid #ddd;
+                            position: relative;
+                            z-index: 12;
+                            overflow: hidden;
+
+                            a {
+                                display: block;
+                                transition: all .8s ease;
+                                position: relative;
+                                z-index: 11;
+
+                                &:hover {
+                                    transform: translateX(8px);
+                                }
+
+                                img {
+                                    vertical-align: bottom;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* footer底部栏样式 */
+.foot_box {
+    height: 386px;
+    background-color: #eee;
+    padding: 30px;
+
+    .qual_show {
+        ul {
+            display: flex;
+
+            li {
+                flex: 1;
+                height: 78px;
+                background-color: pink;
+                text-align: center;
+
+                &>:nth-child(n) {
+                    float: left;
+                }
+
+                .foot_cut {
+                    width: 52px;
+                    height: 52px;
+                    margin: 13px 0 13px 32px;
+                    overflow: hidden;
+
+                    span {
+                        content: '';
+                        display: block;
+                        width: 52px;
+                        height: 52px;
+                        background: url('../images/icons.png') no-repeat -253px 0;
+                        padding: 13px 0;
+                    }
+                }
+
+                .pro_save {
+                    margin: 21px 0 21px 4px;
+
+                    p {
+                        font-size: 12px;
+                        margin-bottom: 4px;
+                        font-weight: 700;
+                    }
+
+                    h3 {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+                &:nth-child(2) .foot_cut span{
+                    background-position: -253px -52px;
+                }
+                &:nth-child(3) .foot_cut span{
+                    background-position: -253px -104px;
+                }
+                &:nth-child(4) .foot_cut span{
+                    background-position: -253px -156px;
+                }
+                &:nth-child(5) .foot_cut span{
+                    background-position: -253px -208px;
+                }
+            }
+        }
     }
 }

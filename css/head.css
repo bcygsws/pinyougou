@@ -549,3 +549,276 @@
 }
 
 /* 家用电器和手机通讯商品展示模块样式 */
+.goods_display {
+  margin-top: 20px;
+}
+
+.goods_display .electronic .ele_nav {
+  height: 35px;
+  line-height: 35px;
+}
+
+.goods_display .electronic .ele_nav dl {
+  padding-right: 10px;
+  border-bottom: 2px solid #c91706;
+}
+
+.goods_display .electronic .ele_nav dl dt,
+.goods_display .electronic .ele_nav dl dd {
+  float: left;
+}
+
+.goods_display .electronic .ele_nav dl dt {
+  color: #c91706;
+}
+
+.goods_display .electronic .ele_nav dl dd {
+  float: right;
+  font-size: 12px;
+}
+
+.goods_display .electronic .ele_nav dl dd > a {
+  color: #666666;
+}
+
+.goods_display .electronic .ele_nav dl dd > a:hover {
+  color: #c91706;
+  text-decoration: none;
+}
+
+.goods_display .electronic .ele_nav dl dd > span {
+  margin: 0 10px;
+}
+
+.goods_display .electronic .ele_nav dl dd:last-child a {
+  color: #e92312;
+}
+
+.goods_display .electronic .ele_show {
+  height: 360px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+.goods_display .electronic .ele_show > .ele_left {
+  width: 208px;
+  /*  background-color: red; */
+}
+
+.goods_display .electronic .ele_show > .ele_left ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 6px;
+}
+
+.goods_display .electronic .ele_show > .ele_left ul li {
+  text-align: center;
+  width: 95px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #bbb;
+}
+
+.goods_display .electronic .ele_show > .ele_left ul li a {
+  color: #666666;
+  font-size: 12px;
+}
+
+.goods_display .electronic .ele_show > .ele_left ul li a:hover {
+  text-decoration: none;
+  color: #c91706;
+}
+
+.goods_display .electronic .ele_show > .ele_left .left_show {
+  margin-top: 10px;
+}
+
+.goods_display .electronic .ele_show > .ele_left .left_show a {
+  display: block;
+  text-align: center;
+  transition: all .8s ease;
+}
+
+.goods_display .electronic .ele_show > .ele_left .left_show a img {
+  vertical-align: bottom;
+}
+
+.goods_display .electronic .ele_show > .ele_left .left_show a:hover {
+  transform: translateX(8px);
+}
+
+.goods_display .electronic .ele_show > .ele_mid {
+  width: 332px;
+  /* background-color: orange; */
+}
+
+.goods_display .electronic .ele_show > .ele_mid .ele_lunbo {
+  width: 332px;
+  overflow: hidden;
+}
+
+.goods_display .electronic .ele_show > .ele_mid .ele_lunbo ul {
+  width: 996px;
+}
+
+.goods_display .electronic .ele_show > .ele_mid .ele_lunbo ul li {
+  float: left;
+}
+
+.goods_display .electronic .ele_show > .ele_mid .ele_lunbo ul li a {
+  display: block;
+  transition: all .8s ease;
+}
+
+.goods_display .electronic .ele_show > .ele_mid .ele_lunbo ul li a:hover {
+  transform: translateX(8px);
+}
+
+.goods_display .electronic .ele_show > .ele_mid .ele_lunbo ul li a img {
+  vertical-align: bottom;
+}
+
+.goods_display .electronic .ele_show > .ele_right {
+  width: 660px;
+  /* background-color: hotpink; */
+  display: flex;
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_fat {
+  flex: 1;
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_fat ul.ele_side {
+  width: 220px;
+  /* overflow: hidden; */
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_fat ul.ele_side li {
+  float: left;
+  /*  width: 50%; */
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_fat ul.ele_side li a {
+  display: block;
+  transition: all .8s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_fat ul.ele_side li a:hover {
+  transform: translateX(8px);
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_fat ul.ele_side li a img {
+  vertical-align: bottom;
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_ctr {
+  flex: 1;
+  /* overflow: hidden; */
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_ctr ul.ele_center {
+  width: 220px;
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_ctr ul.ele_center li {
+  float: left;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 12;
+  overflow: hidden;
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_ctr ul.ele_center li a {
+  display: block;
+  transition: all .8s ease;
+  position: relative;
+  z-index: 11;
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_ctr ul.ele_center li a:hover {
+  transform: translateX(8px);
+}
+
+.goods_display .electronic .ele_show > .ele_right .ele_ctr ul.ele_center li a img {
+  vertical-align: bottom;
+}
+
+/* footer底部栏样式 */
+.foot_box {
+  height: 386px;
+  background-color: #eee;
+  padding: 30px;
+}
+
+.foot_box .qual_show ul {
+  display: flex;
+}
+
+.foot_box .qual_show ul li {
+  flex: 1;
+  height: 78px;
+  background-color: pink;
+  text-align: center;
+}
+
+.foot_box .qual_show ul li > :nth-child(n) {
+  float: left;
+}
+
+.foot_box .qual_show ul li .foot_cut {
+  width: 52px;
+  height: 52px;
+  margin: 13px 0 13px 32px;
+  overflow: hidden;
+}
+
+.foot_box .qual_show ul li .foot_cut span {
+  content: '';
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url("../images/icons.png") no-repeat -253px 0;
+  padding: 13px 0;
+}
+
+.foot_box .qual_show ul li .pro_save {
+  margin: 21px 0 21px 4px;
+}
+
+.foot_box .qual_show ul li .pro_save p {
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.foot_box .qual_show ul li .pro_save h3 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.foot_box .qual_show ul li:nth-child(2) .foot_cut span {
+  background-position: -253px -52px;
+}
+
+.foot_box .qual_show ul li:nth-child(3) .foot_cut span {
+  background-position: -253px -104px;
+}
+
+.foot_box .qual_show ul li:nth-child(4) .foot_cut span {
+  background-position: -253px -156px;
+}
+
+.foot_box .qual_show ul li:nth-child(5) .foot_cut span {
+  background-position: -253px -208px;
+}
