@@ -164,11 +164,12 @@
 
 /* 导航栏样式 */
 .shopping_nav {
+  height: 45px;
   border-bottom: 2px solid #c91706;
 }
 
 .shopping_nav .goods_nav {
-  height: 45px;
+  height: 684px;
   position: relative;
 }
 
@@ -494,4 +495,55 @@
 
 .shopping_nav .goods_nav > .shopping_show .show .playshow .play_btn .play_right {
   right: 0;
+}
+
+.shopping_nav .goods_nav > .shopping_tell {
+  height: 162px;
+  margin-top: 10px;
+}
+
+.shopping_nav .goods_nav > .shopping_tell dl {
+  background-color: #EBEBEB;
+}
+
+.shopping_nav .goods_nav > .shopping_tell dl dt,
+.shopping_nav .goods_nav > .shopping_tell dl dd {
+  float: left;
+}
+
+.shopping_nav .goods_nav > .shopping_tell dl dt {
+  width: 198px;
+  height: 162px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.shopping_nav .goods_nav > .shopping_tell dl dt p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 75px;
+}
+
+.shopping_nav .goods_nav > .shopping_tell dl dt h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.shopping_nav .goods_nav > .shopping_tell dl dd a {
+  display: block;
+  height: 162px;
+  line-height: 162px;
+}
+
+.shopping_nav .goods_nav > .shopping_tell dl dd a img {
+  vertical-align: middle;
+  border-right: 1px solid #aaa;
+}
+
+.shopping_nav .goods_nav > .shopping_tell dl dd:last-child a img {
+  border: 0;
 }

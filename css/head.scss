@@ -172,10 +172,11 @@ $skin_hover:#e92312;
 
 /* 导航栏样式 */
 .shopping_nav {
+    height: 45px;
     border-bottom: 2px solid $skin;
 
     .goods_nav {
-        height: 45px;
+        height: 684px;
         position: relative;
 
         >.shopping_cate {
@@ -508,6 +509,57 @@ $skin_hover:#e92312;
                         .play_right {
                             right: 0;
                         }
+                    }
+                }
+
+            }
+        }
+
+        >.shopping_tell {
+            height: 162px;
+            margin-top: 10px;
+
+            dl {
+                background-color: #EBEBEB;
+                dt,
+                dd {
+                    float: left;
+                }
+
+                dt {
+                    width: 198px;
+                    height: 162px;
+                    background-color: rgba(#000, .7);
+                    box-sizing: border-box;
+                    padding: 20px;
+                    color: #ffffff;
+
+                    p {
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 75px;
+                    }
+
+                    h1 {
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: 400;
+                        margin-top: 10px;
+                    }
+                }
+
+                dd {
+                    a {
+                        display: block;
+                        height: 162px;
+                        line-height: 162px;
+                        img{
+                            vertical-align: middle;
+                            border-right: 1px solid #aaa;
+                        }
+                    }
+                    &:last-child  a img{
+                        border: 0;
                     }
                 }
 

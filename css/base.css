@@ -131,6 +131,10 @@ table {
   color: #c91706;
 }
 
+.icon-clock {
+  content: '\e94e';
+}
+
 /* 双伪元素清除浮动 */
 .clearfix::before,
 .clearfix::after {
