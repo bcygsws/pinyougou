@@ -108,9 +108,9 @@ table {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?7kkyc2");
   /* IE9+ */
-  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?7kkyc2#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff?7kkyc2") format("woff"), url("../fonts/icomoon.ttf?7kkyc2") format("truetype"), url("../fonts/icomoon.svg?7kkyc2#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   /* iOS 4.1- */
@@ -123,6 +123,7 @@ table {
 
 .icon-arrowRig::after {
   content: '\e900';
+  margin-left: 5px;
 }
 
 .icon-arrowRig::before {

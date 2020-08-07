@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* 通栏宽度 */
+/* 定义颜色 */
 .w {
   width: 1200px;
   margin: 0 auto;
@@ -137,11 +138,26 @@
   text-align: center;
   display: block;
   width: 100%;
-  border: 1px solid #000;
+  border: 1px solid #ddd;
   font-size: 14px;
   color: #666;
+  background-color: #eee;
 }
 
 .head_nav .car > a:hover {
   text-decoration: none;
+}
+
+.head_nav .car .count {
+  width: 20px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 8px;
+  background-color: #c91706;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  top: -3px;
+  right: 15px;
 }

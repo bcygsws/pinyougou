@@ -1,4 +1,7 @@
 /* 通栏宽度 */
+/* 定义颜色 */
+$skin: #c91706;
+$skin_hover:#e92312;
 
 .w {
     width: 1200px;
@@ -7,37 +10,47 @@
 
 .head_bar {
     background-color: #eee;
+
     .head_son {
         height: 32px;
         line-height: 32px;
         color: #666;
+
         dl {
             font-size: 12px;
+
             dd a,
             dt.register a {
                 color: #666;
+
                 &:hover {
-                    color: #c91706;
+                    color: $skin;
                     text-decoration: none;
                 }
             }
+
             dd {
                 float: left;
-                > a {
+
+                >a {
                     color: #666;
                 }
-                > span {
+
+                >span {
                     margin: 0 5px;
                 }
             }
+
             dt {
                 float: left;
                 margin-right: 500px;
-                > a:nth-child(2) {
+
+                >a:nth-child(2) {
                     color: #666;
                 }
-                > a:last-child {
-                    color: #e92312;
+
+                >a:last-child {
+                    color: $skin_hover;
                 }
             }
         }
@@ -49,6 +62,7 @@
 .head_nav {
     // background-color: hotpink;
     position: relative;
+
     .logo {
         h1 {
             a {
@@ -59,70 +73,98 @@
             }
         }
     }
+
     .search {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+
         .search_input {
             position: relative;
             width: 420px;
+
             input[type='text'] {
                 width: 366px;
                 height: 36px;
-                border: 1px solid #c91706;
+                border: 1px solid $skin;
                 padding-left: 5px;
+
                 &::placeholder {
                     font-size: 14px;
                 }
             }
+
             input[type='button'] {
                 width: 50px;
                 height: 38px;
                 position: absolute;
                 right: 0;
                 top: 0;
-                background-color: #c91706;
+                background-color: $skin;
                 color: #ffffff;
                 border: 0;
             }
         }
+
         ul {
             margin-top: 10px;
+
             li {
                 float: left;
                 margin: 0 5px;
                 font-size: 12px;
+
                 a {
                     color: #333;
+
                     &.first {
-                        color: #e92312;
+                        color: $skin_hover;
                     }
+
                     &:hover {
-                        color: #c91706;
+                        color: $skin;
                         text-decoration: none;
                     }
                 }
             }
         }
     }
+
     .car {
         width: 130px;
         height: 38px;
         position: absolute;
         right: 95px;
         top: 20px;
-        > a {
+        >a {
             line-height: 38px;
             text-align: center;
             display: block;
             width: 100%;
-            border: 1px solid #000;
+            border: 1px solid #ddd;
             font-size: 14px;
             color: #666;
+            background-color: #eee;
+
             &:hover {
                 text-decoration: none;
             }
+        }
+
+        .count {
+            width: 20px;
+            height: 15px;
+            line-height: 15px;
+            border-radius: 8px;
+            background-color: $skin;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            top: -3px;
+            right: 15px;
+
         }
     }
 }
