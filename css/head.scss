@@ -181,7 +181,7 @@ $skin_hover:#e92312;
         height: 638px;
         position: relative;
         /* 为了使得子绝父相情况下，子元素goods_fixed中的margin有效 */
-       /*  transform: translate(0, 0); */
+        /*  transform: translate(0, 0); */
 
         >.shopping_cate {
             width: 210px;
@@ -584,9 +584,11 @@ $skin_hover:#e92312;
             width: 65px;
             height: 200px;
             position: fixed;
-            left: 85px;
+            left: 50%;
             top: 100px;
-           /*  margin-left: -75px;
+            /* 1200的一半+固定导航块宽度+外边距10 */
+            margin-left: -675px;
+            /*  margin-left: -75px;
             margin-top: -82px; */
 
             ul {

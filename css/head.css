@@ -561,8 +561,10 @@
   width: 65px;
   height: 200px;
   position: fixed;
-  left: 85px;
+  left: 50%;
   top: 100px;
+  /* 1200的一半+固定导航块宽度+外边距10 */
+  margin-left: -675px;
   /*  margin-left: -75px;
             margin-top: -82px; */
 }
