@@ -797,7 +797,7 @@ $skin_hover:#e92312;
             li {
                 flex: 1;
                 height: 78px;
-                background-color: pink;
+                /* background-color: pink; */
                 text-align: center;
 
                 &>:nth-child(n) {
@@ -834,19 +834,99 @@ $skin_hover:#e92312;
                         font-weight: 400;
                     }
                 }
-                &:nth-child(2) .foot_cut span{
+
+                &:nth-child(2) .foot_cut span {
                     background-position: -253px -52px;
                 }
-                &:nth-child(3) .foot_cut span{
+
+                &:nth-child(3) .foot_cut span {
                     background-position: -253px -104px;
                 }
-                &:nth-child(4) .foot_cut span{
+
+                &:nth-child(4) .foot_cut span {
                     background-position: -253px -156px;
                 }
-                &:nth-child(5) .foot_cut span{
+
+                &:nth-child(5) .foot_cut span {
                     background-position: -253px -208px;
                 }
             }
+        }
+    }
+
+    .footer_help {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin: 15px 0;
+
+        ul {
+            flex: 1;
+
+            li {
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+
+                a {
+                    font-size: 12px;
+                    color: #666;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $skin;
+                    }
+                }
+            }
+
+            &:last-child {
+                li {
+                    font-size: 14px;
+                    margin-left: 45px;
+                    margin-bottom: 5px;
+                }
+
+                li:nth-child(2) {
+                    height: 95px;
+                }
+
+                li:last-child {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .help_link{
+        ul{
+            width: 838px;
+            margin: 0 auto;
+            li{
+                float: left;
+                text-align: center;
+                a{
+                    font-size: 12px;
+                    color: #666666;
+                    &:hover{
+                        text-decoration: none;
+                        color: $skin;
+                    }
+                }
+                span{
+                    font-size: 12px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+    .add_copy{
+        margin-top: 10px;
+        >p{
+            font-size: 12px;
+            text-align: center;
+            color: #666666;
         }
     }
 }

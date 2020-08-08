@@ -768,7 +768,7 @@
 .foot_box .qual_show ul li {
   flex: 1;
   height: 78px;
-  background-color: pink;
+  /* background-color: pink; */
   text-align: center;
 }
 
@@ -821,4 +821,83 @@
 
 .foot_box .qual_show ul li:nth-child(5) .foot_cut span {
   background-position: -253px -208px;
+}
+
+.foot_box .footer_help {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+.foot_box .footer_help ul {
+  flex: 1;
+}
+
+.foot_box .footer_help ul li {
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.foot_box .footer_help ul li a {
+  font-size: 12px;
+  color: #666;
+}
+
+.foot_box .footer_help ul li a:hover {
+  text-decoration: none;
+  color: #c91706;
+}
+
+.foot_box .footer_help ul:last-child li {
+  font-size: 14px;
+  margin-left: 45px;
+  margin-bottom: 5px;
+}
+
+.foot_box .footer_help ul:last-child li:nth-child(2) {
+  height: 95px;
+}
+
+.foot_box .footer_help ul:last-child li:last-child {
+  font-size: 12px;
+}
+
+.foot_box .help_link ul {
+  width: 838px;
+  margin: 0 auto;
+}
+
+.foot_box .help_link ul li {
+  float: left;
+  text-align: center;
+}
+
+.foot_box .help_link ul li a {
+  font-size: 12px;
+  color: #666666;
+}
+
+.foot_box .help_link ul li a:hover {
+  text-decoration: none;
+  color: #c91706;
+}
+
+.foot_box .help_link ul li span {
+  font-size: 12px;
+  margin: 5px;
+}
+
+.foot_box .add_copy {
+  margin-top: 10px;
+}
+
+.foot_box .add_copy > p {
+  font-size: 12px;
+  text-align: center;
+  color: #666666;
 }
