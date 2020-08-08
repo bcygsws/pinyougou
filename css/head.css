@@ -169,14 +169,19 @@
 }
 
 .shopping_nav .goods_nav {
-  height: 684px;
+  height: 638px;
   position: relative;
+  /* 为了使得子绝父相情况下，子元素goods_fixed中的margin有效 */
+  /*  transform: translate(0, 0); */
+  /* 固定定位-固定电梯导航块 经过考虑选择head_nav为固定定位父盒子*/
 }
 
 .shopping_nav .goods_nav > .shopping_cate {
   width: 210px;
   height: 512px;
   background-color: #c91706;
+  position: absolute;
+  top: -47px;
 }
 
 .shopping_nav .goods_nav > .shopping_cate dt {
@@ -222,7 +227,7 @@
 .shopping_nav .goods_nav > .shopping_link {
   position: absolute;
   left: 210px;
-  top: 0;
+  top: -47px;
 }
 
 .shopping_nav .goods_nav > .shopping_link ul li {
@@ -252,7 +257,7 @@
   margin: 10px 0 0 10px;
   position: absolute;
   left: 210px;
-  top: 47px;
+  top: 0;
   /*  background-color: blue; */
   display: flex;
   flex-direction: row;
@@ -498,8 +503,12 @@
 }
 
 .shopping_nav .goods_nav > .shopping_tell {
+  width: 100%;
   height: 162px;
   margin-top: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .shopping_nav .goods_nav > .shopping_tell dl {
@@ -546,6 +555,41 @@
 
 .shopping_nav .goods_nav > .shopping_tell dl dd:last-child a img {
   border: 0;
+}
+
+.shopping_nav .goods_nav .goods_fixed {
+  width: 65px;
+  height: 200px;
+  position: fixed;
+  left: 85px;
+  top: 100px;
+  /*  margin-left: -75px;
+            margin-top: -82px; */
+}
+
+.shopping_nav .goods_nav .goods_fixed ul li {
+  font-size: 12px;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 4px;
+  border-bottom: 1px solid #cccccc;
+  background-color: #fff;
+}
+
+.shopping_nav .goods_nav .goods_fixed ul li:first-child {
+  border: 0;
+  background-color: #c91706;
+  color: #ffffff;
+}
+
+.shopping_nav .goods_nav .goods_fixed ul li a {
+  color: #666666;
+}
+
+.shopping_nav .goods_nav .goods_fixed ul li a:hover {
+  color: #c91706;
+  text-decoration: none;
 }
 
 /* 家用电器和手机通讯商品展示模块样式 */

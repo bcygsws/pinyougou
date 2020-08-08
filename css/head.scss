@@ -178,13 +178,17 @@ $skin_hover:#e92312;
     }
 
     .goods_nav {
-        height: 684px;
+        height: 638px;
         position: relative;
+        /* 为了使得子绝父相情况下，子元素goods_fixed中的margin有效 */
+       /*  transform: translate(0, 0); */
 
         >.shopping_cate {
             width: 210px;
             height: 512px;
             background-color: $skin;
+            position: absolute;
+            top: -47px;
 
             dt {
                 text-align: center;
@@ -231,7 +235,7 @@ $skin_hover:#e92312;
         >.shopping_link {
             position: absolute;
             left: 210px;
-            top: 0;
+            top: -47px;
 
             ul {
                 li {
@@ -263,7 +267,7 @@ $skin_hover:#e92312;
             margin: 10px 0 0 10px;
             position: absolute;
             left: 210px;
-            top: 47px;
+            top: 0;
             /*  background-color: blue; */
             display: flex;
             flex-direction: row;
@@ -518,8 +522,12 @@ $skin_hover:#e92312;
         }
 
         >.shopping_tell {
+            width: 100%;
             height: 162px;
             margin-top: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
 
             dl {
                 background-color: #EBEBEB;
@@ -570,8 +578,48 @@ $skin_hover:#e92312;
 
             }
         }
+
+        /* 固定定位-固定电梯导航块 经过考虑选择head_nav为固定定位父盒子*/
+        .goods_fixed {
+            width: 65px;
+            height: 200px;
+            position: fixed;
+            left: 85px;
+            top: 100px;
+           /*  margin-left: -75px;
+            margin-top: -82px; */
+
+            ul {
+                li {
+                    font-size: 12px;
+                    text-align: center;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0 4px;
+                    border-bottom: 1px solid #cccccc;
+                    background-color: #fff;
+
+                    &:first-child {
+                        border: 0;
+                        background-color: $skin;
+                        color: #ffffff;
+                    }
+
+                    a {
+                        color: #666666;
+
+                        &:hover {
+                            color: $skin;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
+
 
 /* 家用电器和手机通讯商品展示模块样式 */
 .goods_display {
@@ -899,31 +947,38 @@ $skin_hover:#e92312;
             }
         }
     }
-    .help_link{
-        ul{
+
+    .help_link {
+        ul {
             width: 838px;
             margin: 0 auto;
-            li{
+
+            li {
                 float: left;
                 text-align: center;
-                a{
+
+                a {
                     font-size: 12px;
                     color: #666666;
-                    &:hover{
+
+                    &:hover {
                         text-decoration: none;
                         color: $skin;
                     }
                 }
-                span{
+
+                span {
                     font-size: 12px;
                     margin: 5px;
                 }
             }
         }
     }
-    .add_copy{
+
+    .add_copy {
         margin-top: 10px;
-        >p{
+
+        >p {
             font-size: 12px;
             text-align: center;
             color: #666666;
