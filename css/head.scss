@@ -15,7 +15,7 @@ $skin_hover:#e92312;
         height: 32px;
         line-height: 32px;
         color: #666;
-        background-color: pink;
+        /* background-color: pink; */
 
         dl {
             font-size: 12px;
@@ -65,7 +65,6 @@ $skin_hover:#e92312;
                 /* 二级菜单样式 */
                 >ul {
                     width: 90px;
-                    height: 110px;
                     background-color: #fff;
                     position: absolute;
                     right: 0;
@@ -74,6 +73,19 @@ $skin_hover:#e92312;
                     z-index: 100;
                     border: 1px solid #eee;
                     border-top: 0;
+                    box-sizing: border-box;
+                    padding: 4px;
+                    li{
+                        text-align: center;
+                        height: 25px;
+                        line-height: 25px;
+                        a{
+                            color: #666666;
+                            &:hover{
+                                color: $skin;
+                            }
+                        }
+                    }
                 }
 
                 /* 有二级菜单的dd,弹出二级菜单后的a+ul的统一背景 */
@@ -84,7 +96,7 @@ $skin_hover:#e92312;
 
             dt {
                 float: left;
-                margin-right: 475px;
+                margin-right: 495px;
 
                 >a:nth-child(2) {
                     color: #666;

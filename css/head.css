@@ -14,7 +14,7 @@
   height: 32px;
   line-height: 32px;
   color: #666;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .head_bar .head_son dl {
@@ -74,7 +74,6 @@
 .head_bar .head_son dl .dd10 > ul,
 .head_bar .head_son dl .dd12 > ul {
   width: 90px;
-  height: 110px;
   background-color: #fff;
   position: absolute;
   right: 0;
@@ -83,6 +82,31 @@
   z-index: 100;
   border: 1px solid #eee;
   border-top: 0;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.head_bar .head_son dl .dd2 > ul li,
+.head_bar .head_son dl .dd8 > ul li,
+.head_bar .head_son dl .dd10 > ul li,
+.head_bar .head_son dl .dd12 > ul li {
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+}
+
+.head_bar .head_son dl .dd2 > ul li a,
+.head_bar .head_son dl .dd8 > ul li a,
+.head_bar .head_son dl .dd10 > ul li a,
+.head_bar .head_son dl .dd12 > ul li a {
+  color: #666666;
+}
+
+.head_bar .head_son dl .dd2 > ul li a:hover,
+.head_bar .head_son dl .dd8 > ul li a:hover,
+.head_bar .head_son dl .dd10 > ul li a:hover,
+.head_bar .head_son dl .dd12 > ul li a:hover {
+  color: #c91706;
 }
 
 .head_bar .head_son dl .dd2:hover,
@@ -94,7 +118,7 @@
 
 .head_bar .head_son dl dt {
   float: left;
-  margin-right: 475px;
+  margin-right: 495px;
 }
 
 .head_bar .head_son dl dt > a:nth-child(2) {
