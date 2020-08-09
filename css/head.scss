@@ -15,12 +15,13 @@ $skin_hover:#e92312;
         height: 32px;
         line-height: 32px;
         color: #666;
+        background-color: pink;
 
         dl {
             font-size: 12px;
 
-            dd a,
-            dt.register a {
+            dd>a,
+            dt.register>a {
                 color: #666;
 
                 &:hover {
@@ -34,16 +35,56 @@ $skin_hover:#e92312;
 
                 >a {
                     color: #666;
+                    padding: 10px 2px;
+
+                    &:hover {
+                        background-color: #fff;
+                    }
                 }
 
-                >span {
+                &:nth-child(2n+1) {
                     margin: 0 5px;
+                }
+            }
+
+            .dd2,
+            .dd8,
+            .dd10,
+            .dd12 {
+                position: relative;
+                z-index: 99;
+
+                >a {
+
+                    /* hover状态下使用::before和::after直接跟在后面就可以了，这一句也可以不写，知道这种用法即可，因为在index.js中使用jqury控制了其父元素dd的属性 */
+                    /* &:hover::after {
+                        content: '\e902';
+                    } */
+                }
+
+                /* 二级菜单样式 */
+                >ul {
+                    width: 90px;
+                    height: 110px;
+                    background-color: #fff;
+                    position: absolute;
+                    right: 0;
+                    top: 31px;
+                    /* 利用z-index调整定位元素次序，将ul的上边线颜色设置为白色，top：31;可以压住a原本背景分界形成的实现效果 */
+                    z-index: 100;
+                    border: 1px solid #eee;
+                    border-top: 0;
+                }
+
+                /* 有二级菜单的dd,弹出二级菜单后的a+ul的统一背景 */
+                &:hover {
+                    background-color: #fff;
                 }
             }
 
             dt {
                 float: left;
-                margin-right: 500px;
+                margin-right: 475px;
 
                 >a:nth-child(2) {
                     color: #666;
@@ -69,7 +110,7 @@ $skin_hover:#e92312;
                 display: block;
                 height: 105px;
                 background: url('../images/logo.png') no-repeat left center;
-                text-indent: -999px;
+                text-indent: -9999px;
             }
         }
     }

@@ -14,19 +14,20 @@
   height: 32px;
   line-height: 32px;
   color: #666;
+  background-color: pink;
 }
 
 .head_bar .head_son dl {
   font-size: 12px;
 }
 
-.head_bar .head_son dl dd a,
-.head_bar .head_son dl dt.register a {
+.head_bar .head_son dl dd > a,
+.head_bar .head_son dl dt.register > a {
   color: #666;
 }
 
-.head_bar .head_son dl dd a:hover,
-.head_bar .head_son dl dt.register a:hover {
+.head_bar .head_son dl dd > a:hover,
+.head_bar .head_son dl dt.register > a:hover {
   color: #c91706;
   text-decoration: none;
 }
@@ -37,15 +38,63 @@
 
 .head_bar .head_son dl dd > a {
   color: #666;
+  padding: 10px 2px;
 }
 
-.head_bar .head_son dl dd > span {
+.head_bar .head_son dl dd > a:hover {
+  background-color: #fff;
+}
+
+.head_bar .head_son dl dd:nth-child(2n+1) {
   margin: 0 5px;
+}
+
+.head_bar .head_son dl .dd2,
+.head_bar .head_son dl .dd8,
+.head_bar .head_son dl .dd10,
+.head_bar .head_son dl .dd12 {
+  position: relative;
+  z-index: 99;
+  /* 二级菜单样式 */
+  /* 有二级菜单的dd,弹出二级菜单后的a+ul的统一背景 */
+}
+
+.head_bar .head_son dl .dd2 > a,
+.head_bar .head_son dl .dd8 > a,
+.head_bar .head_son dl .dd10 > a,
+.head_bar .head_son dl .dd12 > a {
+  /* hover状态下使用::before和::after直接跟在后面就可以了，这一句也可以不写，知道这种用法即可，因为在index.js中使用jqury控制了其父元素dd的属性 */
+  /* &:hover::after {
+                        content: '\e902';
+                    } */
+}
+
+.head_bar .head_son dl .dd2 > ul,
+.head_bar .head_son dl .dd8 > ul,
+.head_bar .head_son dl .dd10 > ul,
+.head_bar .head_son dl .dd12 > ul {
+  width: 90px;
+  height: 110px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 31px;
+  /* 利用z-index调整定位元素次序，将ul的上边线颜色设置为白色，top：31;可以压住a原本背景分界形成的实现效果 */
+  z-index: 100;
+  border: 1px solid #eee;
+  border-top: 0;
+}
+
+.head_bar .head_son dl .dd2:hover,
+.head_bar .head_son dl .dd8:hover,
+.head_bar .head_son dl .dd10:hover,
+.head_bar .head_son dl .dd12:hover {
+  background-color: #fff;
 }
 
 .head_bar .head_son dl dt {
   float: left;
-  margin-right: 500px;
+  margin-right: 475px;
 }
 
 .head_bar .head_son dl dt > a:nth-child(2) {
@@ -65,7 +114,7 @@
   display: block;
   height: 105px;
   background: url("../images/logo.png") no-repeat left center;
-  text-indent: -999px;
+  text-indent: -9999px;
 }
 
 .head_nav .search {

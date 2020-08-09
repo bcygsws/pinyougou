@@ -121,6 +121,11 @@ table {
   color: #666;
 }
 
+.icon-arrowDown::after {
+  content: '\e902';
+  color: #666;
+}
+
 .icon-arrowRig::after {
   content: '\e900';
   margin-left: 5px;
