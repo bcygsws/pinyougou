@@ -294,7 +294,35 @@
 
 .shopping_nav .goods_nav > .shopping_cate dd a.cate_link:hover {
   text-decoration: none;
+}
+
+.shopping_nav .goods_nav > .shopping_cate dd > ul {
+  width: 741px;
+  height: 465px;
+  position: absolute;
+  left: 210px;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  border: 1px solid #ccc;
+  border-left: 0;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.shopping_nav .goods_nav > .shopping_cate dd > ul li {
+  float: left;
+  margin: 0 15px;
+}
+
+.shopping_nav .goods_nav > .shopping_cate dd > ul li a {
+  font-size: 12px;
+  color: #666666;
+}
+
+.shopping_nav .goods_nav > .shopping_cate dd > ul li a:hover {
   color: #c91706;
+  text-decoration: none;
 }
 
 .shopping_nav .goods_nav > .shopping_link {

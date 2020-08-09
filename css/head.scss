@@ -75,13 +75,16 @@ $skin_hover:#e92312;
                     border-top: 0;
                     box-sizing: border-box;
                     padding: 4px;
-                    li{
+
+                    li {
                         text-align: center;
                         height: 25px;
                         line-height: 25px;
-                        a{
+
+                        a {
                             color: #666666;
-                            &:hover{
+
+                            &:hover {
                                 color: $skin;
                             }
                         }
@@ -279,7 +282,35 @@ $skin_hover:#e92312;
 
                     &:hover {
                         text-decoration: none;
-                        color: $skin;
+                    }
+
+                }
+
+                >ul {
+                    width: 741px;
+                    height: 465px;
+                    position: absolute;
+                    left: 210px;
+                    top: 0;
+                    background-color: #fff;
+                    z-index: 100;
+                    border: 1px solid #ccc;
+                    border-left: 0;
+                    box-sizing: border-box;
+                    padding: 5px;
+
+                    li {
+                        float: left;
+                        margin:0 15px;
+                        a {
+                            font-size: 12px;
+                            color: #666666;
+
+                            &:hover {
+                                color: $skin;
+                                text-decoration: none;
+                            }
+                        }
                     }
                 }
             }

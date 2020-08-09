@@ -23,4 +23,26 @@ $(function () {
             },
         );
     });
+    // 商品分类中的二级菜单
+    var arr1 = $('.shopping_nav .shopping_cate dl').children('dd');
+    $('.shopping_nav .shopping_cate dl').find('ul').hide();
+    // 虽然arr1是jQuery对象数组，each方法中遍历值仍然还是原生DOM对象
+    $.each(arr1, function (i, ele) {
+        $(ele).hover(
+            function () {
+                console.log(i);
+                $(this).css({ backgroundColor: '#ffffff' });
+                $(this).children('a').css({ color: '#c91706' });
+                $(this).children('ul').show();
+                $(this)
+                    .children('ul')
+                    .css({ top: -31 * i + 'px' });
+            },
+            function () {
+                $(this).css({ backgroundColor: '#c91706' });
+                $(this).children('a').css({ color: '#ffffff' });
+                $(this).children('ul').hide();
+            },
+        );
+    });
 });
